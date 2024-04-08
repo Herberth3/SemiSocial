@@ -1,0 +1,60 @@
+.body-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 100%;
+    min-height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(30deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 29%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.content-login {
+    width: 1100px;
+    height: 500px;
+    background-color: white;
+}
+
+
+.content-logo-login {
+    background-color: #000;
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content-form-login {
+    float: right;
+    width: 49%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* background-color: red; */
+}
+
+
+.title-form-login h1 {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    height: 24px;
+    font-family: 'Arimo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.content-inputs-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: burlywood; */
+}
