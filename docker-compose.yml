@@ -1,0 +1,28 @@
+version: '3.7'
+networks:
+  semisocial:
+    name: semisocial
+    driver: bridge
+
+services:
+  backend:
+    build: ./backend
+    env_file:
+      - ./backend/.env 
+    container_name: semisocialbackend
+    hostname: semisocialbackend 
+    restart: always 
+    ports:
+      - 5000:5000
+    networks:
+      - semisocial
+
+  frontend:
+    build: ./frontend/semisocial
+    container_name: semisocialfrontend
+    hostname: semisocialfrontend 
+    restart: always 
+    ports:
+      - 80:80
+    networks:
+    - semisocial
