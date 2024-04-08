@@ -1,0 +1,47 @@
+### ping el server
+GET http://localhost:5000/ping
+
+### crear user
+POST http://localhost:5000/signup
+Content-Type: application/json
+
+{
+    "dpi":"2984342880101",
+	"nombreCompleto":"Alex Lux",
+    "email":"alexlux94@gmail.com",
+    "contra":"Passsword123",
+    "nombreFoto" :"alexlux.jpg",
+    "fotoBase64" : ""
+}
+
+### login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"alexlux94@gmail.com",
+    "contra":"Passsword123"
+}
+
+### logout
+GET http://localhost:5000/logout
+
+
+### get verify user-------------------------------------------------------------------------------------------------------------------------------------------------------
+GET http://localhost:5000/user/ping
+Authorization: 
+
+### editar usuario
+POST http://localhost:5000/editarUsuario
+Content-Type: application/json
+Authorization: 
+
+{
+    "nombreCompleto":"alexander",
+    "nombreFoto" : "no2.jpg",
+    "fotoBase64" : ""
+}
+
+### getUser
+GET http://localhost:5000/usuario
+Authorization: 
